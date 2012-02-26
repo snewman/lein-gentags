@@ -5,6 +5,12 @@ Runs etags on all clojure sourcefiles in the current project, creating a TAGS fi
 ## Usage
 
 ```
+lein plugin install lein-gentags "0.0.1-SNAPSHOT"
+```
+
+Then you can run:
+
+```
 lein gentags
 ```
 
