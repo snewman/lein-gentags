@@ -5,7 +5,7 @@ Ever wanted to navigate your Clojure code more effectively when in Emacs? Tags a
 ## Usage
 
 ```
-lein plugin install lein-gentags "0.0.1-SNAPSHOT"
+lein plugin install lein-gentags "0.0.2-SNAPSHOT"
 ```
 
 Then you can run:
