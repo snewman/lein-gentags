@@ -14,7 +14,7 @@
       (println "Cannot update tags for" file ":" err))))
 
 (defn gentags
-  "Emit a pretty-printed representation of the project map."
+  "Upates a TAGS file for the source files in the project for use with emacs code navigation"
   [project]
   (let [clj-files (-clj-files (:source-path project))]
     ;Blow the existing TAGS file away...
