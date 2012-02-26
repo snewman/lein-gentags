@@ -1,6 +1,6 @@
 # lein-gentags
 
-Runs etags on all clojure sourcefiles in the current project, creating a TAGS file in the local directory.
+Ever wanted to navigate your Clojure code more effectively when in Emacs? Tags are the answer. lein-gentags will generate a TAGS file, which Emacs can then use to enable code navigation features.
 
 ## Usage
 
@@ -13,6 +13,14 @@ Then you can run:
 ```
 lein gentags
 ```
+
+To search for a method definition or namespace delclaration, type:
+
+```
+M-. [symbol]
+```
+
+And when prompted navigate to the newly created TAGS file. When this file changes, you'll be prompted to reload the file, although it [is possible](http://stackoverflow.com/questions/4096580/how-to-make-emacs-reload-the-tags-file-automatically) to do this autoamtically.
 
 ## Thanks
 
