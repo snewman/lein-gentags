@@ -16,7 +16,7 @@
 (defn gentags
   "Upates a TAGS file for the source files in the project for use with emacs code navigation"
   [project]
-  (let [clj-files (-clj-files (:source-path project))]
+  (let [clj-files (-clj-files (first (:source-paths project)))]
     ;Blow the existing TAGS file away...
     (io/delete-file (io/file "TAGS") true)
     (dorun
